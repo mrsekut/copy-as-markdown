@@ -1,13 +1,27 @@
 {
-  "name": "chatgpt-md-copy",
-  "module": "index.ts",
-  "type": "module",
+  "name": "copy-as-markdown",
+  "displayName": "Copy as Markdown",
+  "version": "1.0.0",
+  "description": "Copy selected text as Markdown",
   "private": true,
+  "scripts": {
+    "dev": "plasmo dev",
+    "build": "plasmo build",
+    "test": "bun test"
+  },
+  "manifest": {
+    "permissions": [
+      "clipboardWrite"
+    ]
+  },
   "devDependencies": {
     "@types/bun": "latest",
-    "prettier": "^3.8.1"
-  },
-  "peerDependencies": {
+    "@types/chrome": "latest",
+    "happy-dom": "^20.7.0",
+    "prettier": "^3.8.1",
     "typescript": "^5"
+  },
+  "dependencies": {
+    "plasmo": "^0.90.5"
   }
 }

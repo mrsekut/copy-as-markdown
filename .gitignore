@@ -4,7 +4,11 @@ node_modules
 # output
 out
 dist
+build
 *.tgz
+
+# plasmo
+.plasmo
 
 # code coverage
 coverage
