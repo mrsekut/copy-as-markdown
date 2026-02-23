@@ -1,7 +1,7 @@
 {
   "name": "copy-as-markdown-for-ai-chat",
   "displayName": "Copy as Markdown for AI Chat",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "description": "Copy AI chat responses as Markdown",
   "private": true,
   "scripts": {
