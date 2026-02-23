@@ -4,7 +4,7 @@ import { htmlToMarkdown } from '../core/html-to-markdown';
 import { showToast } from '../lib/toast';
 
 export const config: PlasmoCSConfig = {
-  matches: ['<all_urls>'],
+  matches: ['https://chatgpt.com/*'],
 };
 
 document.addEventListener('keydown', e => {
