@@ -1,15 +1,44 @@
-# chatgpt-md-copy
+<div class="title-block" style="text-align: center;" align="center">
 
-To install dependencies:
+# Copy as Markdown
 
-```bash
+A Chrome extension that copies selected web content as Markdown.
+
+<p><img title="Copy as Markdown logo" src="assets/icon.png" width="320" height="320"></p>
+
+</div>
+
+## Usage
+
+1. Select any content on a webpage
+2. Press `Ctrl+Shift+C` (`Cmd+Shift+C` on Mac)
+3. Paste the Markdown anywhere
+
+A toast notification confirms when the content has been copied.
+
+## Supported Conversions
+
+- Headings (h1-h4)
+- Bold, italic
+- Links
+- Inline code and fenced code blocks (with language detection)
+- Ordered and unordered lists
+- Blockquotes
+- Tables
+- Horizontal rules
+
+## Install from Source
+
+```sh
 bun install
+bun run build
 ```
 
-To run:
+Then load `build/chrome-mv3-prod/` as an unpacked extension in `chrome://extensions`.
 
-```bash
-bun run index.ts
+## Development
+
+```sh
+bun run dev
+bun test
 ```
-
-This project was created using `bun init` in bun v1.3.9. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
