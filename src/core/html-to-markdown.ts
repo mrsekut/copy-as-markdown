@@ -68,7 +68,8 @@ function convertNode(node: Node): string {
       }
       return `\`${inner()}\``;
     case 'pre': {
-      const codeEl = findChildByTag(el, 'code');
+      const codeEl =
+        findChildByTag(el, 'code') ?? el.querySelector('code');
       const lang = codeEl?.className?.match(/language-(\S+)/)?.[1] ?? '';
       const code = codeEl ? codeEl.textContent : el.textContent;
       return `\`\`\`${lang}\n${code}\n\`\`\`\n\n`;

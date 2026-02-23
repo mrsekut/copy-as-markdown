@@ -4,4 +4,7 @@ export interface Adapter {
 
   /** Extract an HTML container from the current selection */
   getSelectionContainer(selection: Selection): HTMLElement | null;
+
+  /** Normalize site-specific DOM into standard HTML before conversion */
+  normalizeContainer(container: HTMLElement): HTMLElement;
 }

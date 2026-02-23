@@ -20,7 +20,8 @@ document.addEventListener('keydown', e => {
     if (!container) return;
 
     e.preventDefault();
-    const md = htmlToMarkdown(container);
+    const normalized = adapter.normalizeContainer(container);
+    const md = htmlToMarkdown(normalized);
     navigator.clipboard
       .writeText(md)
       .then(() => showToast('Copied as Markdown!'));
